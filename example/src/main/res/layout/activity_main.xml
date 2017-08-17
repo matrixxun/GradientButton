@@ -1,99 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <com.bartbergmans.gradientbutton.views.GradientButton
+            android:minWidth="88dp"
+            android:minHeight="48dp"
             android:id="@+id/gradient_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
             android:clickable="true"
-            android:text="@string/button_text"
-            app:end_color="@color/gradientEnd"
-            app:filled="false"
-            app:orientation="top_bottom"
-            app:start_color="@color/gradientStart"
-            app:stroke="3dp" />
-
-        <com.bartbergmans.gradientbutton.views.GradientButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:clickable="true"
-            android:text="@string/button_text"
-            app:end_color="@color/gradientEnd"
-            app:fill_color="@color/fillColor"
-            app:filled="false"
-            app:orientation="top_bottom"
-            app:start_color="@color/gradientStart"
-            app:stroke="3dp" />
-
-        <com.bartbergmans.gradientbutton.views.GradientButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_text"
+            android:text="Click Me Must!!!"
             android:textColor="@android:color/white"
-            app:end_color="@color/gradientEnd"
-            app:filled="true"
+            app:end_color="#ff3609"
+            app:filled="false"
+            android:gravity="center"
             app:orientation="top_bottom"
-            app:start_color="@color/gradientStart"
+            app:start_color="#ff8044"
             app:stroke="3dp" />
-    </LinearLayout>
 
+        <com.bartbergmans.gradientbutton.views.GradientButton
+            android:id="@+id/gradient_2"
+            android:layout_below="@+id/gradient_1"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Click Me Must!!!"
+            android:gravity="center_vertical|center_horizontal"
+            app:end_color="#2a6e91"
+            app:filled="false"
+            app:orientation="top_bottom"
+            app:start_color="#7327a1"
+            app:stroke="3dp" />
+
+        <com.bartbergmans.gradientbutton.views.GradientButton
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/gradient_2"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:text="买遍全球"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:textSize="16sp"
+            app:end_color="#953cff"
+            app:filled="true"
+            app:orientation="left_right"
+            app:start_color="#d866ff"
+            app:stroke="3dp" />
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:layout_marginBottom="20dp">
 
         <com.bartbergmans.gradientbutton.views.GradientButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="@string/button_text"
+            android:textColor="@android:color/white"
+            android:text="Click Me Must!!!"
+            android:gravity="center_vertical|center_horizontal"
             app:circular="true"
-            app:end_color="@color/gradientEnd"
+            app:end_color="#ca5e62"
             app:filled="false"
+            android:enabled="false"
+            android:clickable="false"
             app:orientation="top_bottom"
-            app:start_color="@color/gradientStart"
+            app:start_color="#925096"
             app:stroke="3dp" />
 
         <com.bartbergmans.gradientbutton.views.GradientButton
             android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.Button"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
-            android:text="@string/button_text"
+            android:text="Click Me Must Click Me Must"
             app:circular="true"
-            app:end_color="@color/gradientEnd"
+            android:textColor="@android:color/white"
+            app:end_color="#028e81"
+            android:gravity="center_vertical|center_horizontal"
             app:fill_color="@color/fillColor"
             app:filled="false"
             app:orientation="top_bottom"
             app:start_color="@color/gradientStart"
             app:stroke="3dp" />
 
-        <com.bartbergmans.gradientbutton.views.GradientButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_text"
-            android:textColor="@android:color/white"
-            app:circular="true"
-            app:end_color="@color/gradientEnd"
-            app:filled="true"
-            app:orientation="top_bottom"
-            app:start_color="@color/gradientStart"
-            app:stroke="3dp" />
+            android:text="Click Me Must!!!"
+            android:background="@drawable/felin_btn_default_mtrl_shape"
+            android:textColor="@android:color/black"
+             />
+
+    <com.bartbergmans.gradientbutton.views.GradientButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="买遍全球"
+        android:gravity="center"
+        android:clickable="true"
+        android:textSize="18sp"
+        app:end_color="#953cff"
+        app:filled="true"
+        app:orientation="left_right"
+        app:start_color="#d866ff"
+        app:stroke="3dp" />
     </LinearLayout>
 </LinearLayout>
