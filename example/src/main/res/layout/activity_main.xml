@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,43 +15,40 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.bartbergmans.gradientbutton.views.GradientButton
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
             android:minWidth="88dp"
             android:minHeight="48dp"
             android:id="@+id/gradient_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:text="Click Me Must!!!"
-            android:textColor="@android:color/white"
-            app:end_color="#ff3609"
-            app:filled="false"
+            android:text="Buy Now"
             android:gravity="center"
-            app:orientation="top_bottom"
-            app:start_color="#ff8044"
-            app:stroke="3dp" />
+            android:textColor="@android:color/white"
+            app:fpb_start_color="#ff8044"
+            app:fpb_end_color="#ff3609"
+            app:fpb_orientation="left_right" />
 
-        <com.bartbergmans.gradientbutton.views.GradientButton
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
             android:id="@+id/gradient_2"
             android:layout_below="@+id/gradient_1"
             android:layout_width="wrap_content"
             android:textColor="@android:color/white"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:padding="16dp"
             android:text="Click Me Must!!!"
             android:gravity="center_vertical|center_horizontal"
-            app:end_color="#2a6e91"
-            app:filled="false"
-            app:orientation="top_bottom"
-            app:start_color="#7327a1"
-            app:stroke="3dp" />
+            app:fpb_start_color="#7327a1"
+            app:fpb_end_color="#2a6e91"
+            app:fpb_filled="false"
+            app:fpb_orientation="bl_tr"
+            app:fpb_shape_type="round_rect"
+            app:fpb_stroke="1dp" />
 
-        <com.bartbergmans.gradientbutton.views.GradientButton
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
             android:layout_width="wrap_content"
             android:layout_below="@+id/gradient_2"
             android:layout_height="wrap_content"
@@ -58,70 +58,121 @@
             android:gravity="center_vertical|center_horizontal"
             android:clickable="true"
             android:textSize="16sp"
-            app:end_color="#953cff"
-            app:filled="true"
-            app:orientation="left_right"
-            app:start_color="#d866ff"
-            app:stroke="3dp" />
+            app:fpb_start_color="#d866ff"
+            app:fpb_end_color="#953cff"
+            app:fpb_orientation="left_right"
+            app:fpb_stroke="2dp"
+            app:fpb_stroke_color="#ff2d6f"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_marginBottom="20dp">
+        >
 
-        <com.bartbergmans.gradientbutton.views.GradientButton
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
             android:text="Click Me Must!!!"
             android:gravity="center_vertical|center_horizontal"
-            app:circular="true"
-            app:end_color="#ca5e62"
-            app:filled="false"
-            android:enabled="false"
-            android:clickable="false"
-            app:orientation="top_bottom"
-            app:start_color="#925096"
-            app:stroke="3dp" />
+            app:fpb_end_color="#ca5e62"
+            app:fpb_shape_type="round_rect"
+            app:fpb_orientation="tl_br"
+            app:fpb_start_color="#925096"
+            app:fpb_stroke="3dp" />
 
-        <com.bartbergmans.gradientbutton.views.GradientButton
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
             android:layout_width="wrap_content"
-            style="@style/Widget.AppCompat.Button"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
             android:text="Click Me Must Click Me Must"
-            app:circular="true"
             android:textColor="@android:color/white"
-            app:end_color="#028e81"
             android:gravity="center_vertical|center_horizontal"
-            app:fill_color="@color/fillColor"
-            app:filled="false"
-            app:orientation="top_bottom"
-            app:start_color="@color/gradientStart"
-            app:stroke="3dp" />
+            app:fpb_start_color="@color/gradientStart"
+            app:fpb_end_color="#028e81"
+            app:fpb_orientation="tr_bl" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Click Me Must!!!"
-            android:background="@drawable/felin_btn_default_mtrl_shape"
-            android:textColor="@android:color/black"
-             />
+            />
 
-    <com.bartbergmans.gradientbutton.views.GradientButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:text="买遍全球"
-        android:gravity="center"
-        android:clickable="true"
-        android:textSize="18sp"
-        app:end_color="#953cff"
-        app:filled="true"
-        app:orientation="left_right"
-        app:start_color="#d866ff"
-        app:stroke="3dp" />
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:text="买遍全球好货"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="18sp"
+            app:fpb_corner_radius="4dp"
+            app:fpb_button_type="flat_color"
+            app:fpb_start_color="#d866ff"
+            app:fpb_end_color="#953cff"
+            app:fpb_orientation="bl_tr"/>
+
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
+            android:text="买遍全球"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:fpb_shape_type="round_rect"
+            app:fpb_end_color="#953cff"
+            app:fpb_filled="false"
+            app:fpb_fill_color="#ffffff"
+            app:fpb_orientation="bl_tr"
+            app:fpb_start_color="#d866ff"
+            app:fpb_stroke="1dp" />
+
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="买遍全球"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:fpb_filled="true"
+            app:fpb_fill_color="@android:color/white"
+            app:fpb_orientation="bl_tr"
+            app:fpb_button_type="flat_color"
+            app:fpb_stroke="1dp"
+            app:fpb_stroke_color="@android:color/darker_gray"/>
+
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="买遍全球"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:fpb_filled="true"
+            app:fpb_orientation="bl_tr"
+            app:fpb_button_type="flat_color"
+            app:fpb_shape_type="round_rect"
+            app:fpb_stroke="1dp"
+            app:fpb_stroke_color="@android:color/darker_gray"/>
+
+        <com.bartbergmans.gradientbutton.views.FelinPowerfulButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="扁平button"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:fpb_button_type="flat_borderless"
+            />
+
     </LinearLayout>
+
+
 </LinearLayout>
+</ScrollView>

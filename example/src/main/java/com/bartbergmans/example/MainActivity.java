@@ -1,6 +1,7 @@
 package com.bartbergmans.example;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -22,5 +23,17 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Clicked Button 1");
             }
         });
+
+        final Button button1 = (Button) findViewById(R.id.button1);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                button1.setEnabled(false);
+            }
+        },5000);
+
+//
+//        Button button2 = (Button) findViewById(R.id.button2);
+//        button2.setClickable(false);
     }
 }

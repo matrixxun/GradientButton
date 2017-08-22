@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 5.0 -->
+<!--<color name="ripple_material_dark">#40ffffff</color>-->
+<!--<color name="ripple_material_light">#40000000</color>-->
+
+<!--7.0-->
+<!-- 20% white (foreground) -->
+<!--<color name="ripple_material_dark">#33ffffff</color>-->
+<!-- 12% black (foreground) -->
+<!--<color name="ripple_material_light">#1f000000</color>-->
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#35000000">
+    <item android:id="@+id/ff"
+        android:drawable="@drawable/felin_btn_default_mtrl_shape" />
+</ripple>
