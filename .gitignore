@@ -7,3 +7,4 @@ libs/
 src/main/res/drawable/
 /Example.iml
 /.idea/
+*.iml
